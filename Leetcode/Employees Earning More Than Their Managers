@@ -1,0 +1,8 @@
+LeetCode #181
+Level : Easy
+
+Select e.name as Employee
+FROM Employee e
+JOIN Employee m 
+ON e.managerID = m.ID
+WHERE e.salary > m.salary;

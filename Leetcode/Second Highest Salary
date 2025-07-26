@@ -1,0 +1,10 @@
+LeetCode #176
+Level : Easy
+
+# Write your MySQL query to find 2nd highest salary from EMPLOYEE table : 
+
+SELECT (SELECT DISTINCT salary FROM Employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1) as SecondHighestSalary;
+
+
